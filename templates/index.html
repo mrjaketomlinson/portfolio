@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='logo.ico') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>Jacob Tomlinson's Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(17, 17, 17, 0.9); border-color: rgba(17, 17, 17, 0.9);">
+      <a class="navbar-brand" href="#">Jacob Tomlinson</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link orange" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link orange" href="#experience">EXPERIENCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link orange" href="#skills">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link orange" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="intro">
+      <div class="intro-text">Hey there!<br/><br/>My name is<br/><span class="orange-highlight">Jacob Tomlinson</span>,<br/>and I'm a<br/><span class="orange-highlight">Developer</span>.</div>
+    </div>
+
+    <div id="about" class="section">
+      <div class="container-fluid orange-highlight section-bar">
+        ABOUT
+      </div>
+      <div class="container">
+        <p>
+          As the son of a successful small business owner, entrepreneurship, problem-solving, and attention to detail have always been in my blood. These traits have always helped me in my professional and academic life. My itch for coding led me to study Python to solve efficiency problems in my day job.
+        </p>
+        <br/>
+        <p>
+          From the moment I got started, I was hooked. My self-discipline and newly developed passion for coding allowed me to develop front and back-end web development skills. The fast-paced nature of tech, and the demand for continual innovation fuels my desire to learn and work hard.
+        </p>
+        <br/>
+        <p>
+          As a developer, I use my love for solving problems, my sincere passion for learning, and my uncompromising work ethic to build web apps to perfection.
+        </p>
+        <br/>
+        <p>
+          When I'm not coding, I'm probably reading, hiking, skiing, or drinking a glass of wine with my wife.
+        </p>
+      </div>
+    </div>
+
+    <!-- TODO: INSERT PICS -->
+    <div id="experience">
+      <div class="container-fluid orange-highlight section-bar">
+        EXPERIENCE
+      </div>
+
+      <div class="container section">
+        <div class="card-columns">
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/camping.png') }}" class="img-fluid card-img-top" alt="YelpCamp" />
+            <div class="card-body">
+              <h5 class="card-title">YelpCamp</h5>
+              <h6 class="card-subtitle mb-2 text-muted">JavaScript, Node, Express, MongoDB, Google Maps API, HTML, CSS</h6>
+              <p class="card-text">Social media for campers! The app allows users to create a unique account, add, edit, and delete their own campgrounds for others to view, and make comments to the campgrounds on the site.</p>
+              <a href="https://the-yelp-camp-app.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-lg btn-block">Check it out!</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/productivity.png') }}" class="img-fluid card-img-top" alt="Pomodoro Clock Web App" />
+            <div class="card-body">
+              <h5 class="card-title">Pomodoro Clock</h5>
+              <h6 class="card-subtitle mb-2 text-muted">JavaScript, HTML, CSS</h6>
+              <p class="card-text">Let's get productive! The web app allows users to set the session and break length. The clock updates automatically after their session and break time expire by alerting the user with a beep.</p>
+              <a href="https://pomodoro-clock-js.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-lg btn-block">Check it out!</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/business.png') }}" class="img-fluid card-img-top" alt="Example Business multi-page website" />
+            <div class="card-body">
+              <h5 class="card-title">The Bean Business Website</h5>
+              <h6 class="card-subtitle mb-2 text-muted">JavaScript, React, Google Maps API, HTML, CSS</h6>
+              <p class="card-text">Coffee, anyone? This is a multi-page business website for a fictional Denver coffee shop.</p>
+              <a href="https://example-business-site.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-lg btn-block">Check it out!</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/calculator.png') }}" class="img-fluid card-img-top" alt="Calculator Web App" />
+            <div class="card-body">
+              <h5 class="card-title">Calculator</h5>
+              <h6 class="card-subtitle mb-2 text-muted">JavaScript, HTML, CSS</h6>
+              <p class="card-text">Math is hard. Just like other calculators, this one allows users type in mathematical expressions, and the calculator outputs the answer.</p>
+              <a href="https://calculating-in-js.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-lg btn-block">Check it out!</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/usquiz.png') }}" class="img-fluid card-img-top" alt="United States Quiz App" />
+            <div class="card-body">
+              <h5 class="card-title">United States Quiz</h5>
+              <h6 class="card-subtitle mb-2 text-muted">JavaScript, React, HTML, CSS</h6>
+              <p class="card-text">How much do you know about the United States? This quiz puts some of your basic American Government knowledge to the test.</p>
+              <a href="https://us-quiz-app.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-lg btn-block">Check it out!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TODO: INSERT PICS AND UPDATE SKILLS -->
+    <div id="skills" class="section">
+      <div class="container-fluid orange-highlight section-bar">
+        SKILLS
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="wrapper">
+            <div class="skill">
+              <div class="icon"><i class="fab fa-python"></i></div>
+              <p>Python</p>
+            </div>
+            <div class="skill">
+              <div class="icon"><img alt="python flask" src="{{ url_for('static', filename='img/flask.png') }}"/></div>
+                <p>Flask</p>
+            </div>
+            <div class="skill">
+              <div class="icon"><i class="fas fa-database"></i></div>
+              <p>mongoDB</p>
+            </div>
+            <div class="skill">
+              <div class="icon"><i class="fas fa-database"></i></div>
+              <p>SQL</p>
+            </div>
+            <div class="skill">
+              <div class="icon"><img alt="atom code editor" src="{{ url_for('static', filename='img/atom.png') }}"/></div>
+              <p>Atom</p>
+            </div>
+            <div class="skill">
+              <div class="icon"><i class="fab fa-js"></i></div>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill">
+              <div class="icon"><i class="fab fa-html5"></i></div>
+              <p>HTML</p>
+            </div>
+            <div class="skill">
+              <div class="icon"><i class="fab fa-css3-alt"></i></div>
+              <p>CSS</p>
+            </div>
+            <div class="skill">
+              <div class="icon"><i class="fas fa-code-branch"></i></div>
+              <p>Git</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container-fluid orange-highlight section-bar">
+        CONTACT
+      </div>
+      <div class="container section">
+        <p><a href="mailto:jacob.tomlinson21@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> jacob.tomlinson21@gmail.com</a></p>
+        <p><a href="https://twitter.com/MrJakeTomlinson" target="_blank" rel="noopener noreferrer"><i class="fas fa-at"></i> MrJakeTomlinson</a></p>
+        <p><a href="https://github.com/mrjaketomlinson" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> /mrjaketomlinson</a></p>
+        <p><a href="https://www.linkedin.com/in/jacobtomlinson/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> /in/jacobtomlinson</a></p>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
